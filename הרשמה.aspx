@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="הרשמה.aspx.cs" Inherits="הרשמה" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Register.aspx.cs" Inherits="Register" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,10 +8,10 @@
 </head>
 <body dir="ltr" background="cover">
     <ul>
-        <li><a href="בית.aspx" style="color:#fffa00">Home</a></li>
-        <li><a href="הרשמה.aspx" style="color:#fffa00">Register</a></li>
-        <li><a href="צור קשר.aspx" style="color:#fffa00">Contact</a></li>
-        <li><a href="תמונות.aspx" style="color:#fffa00">Photos</a></li>
+        <li><a href="Home.aspx" style="color:#fffa00">Home</a></li>
+        <li><a href="Register.aspx" style="color:#fffa00">Register</a></li>
+        <li><a href="Contact.aspx" style="color:#fffa00">Contact</a></li>
+        <li><a href="Photos.aspx" style="color:#fffa00">Photos</a></li>
     </ul>
 
        <div style="position: fixed; right: 20px" dir="rtl">
