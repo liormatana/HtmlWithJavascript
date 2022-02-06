@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="כניסה.aspx.cs" Inherits="כניסה" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Entrance.aspx.cs" Inherits="Entrance" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,10 +8,10 @@
 </head>
 <body dir="ltr" background="cover">
     <ul>
-        <li><a href="בית.aspx" style="color:#fffa00">Home</a></li>
-        <li><a href="הרשמה.aspx" style="color:#fffa00">Register</a></li>
-        <li><a href="צור קשר.aspx" style="color:#fffa00">Contact</a></li>
-        <li><a href="תמונות.aspx" style="color:#fffa00">Photos</a></li>
+        <li><a href="Home.aspx" style="color:#fffa00">Home</a></li>
+        <li><a href="Register.aspx" style="color:#fffa00">Register</a></li>
+        <li><a href="Contract.aspx" style="color:#fffa00">Contact</a></li>
+        <li><a href="Photos.aspx" style="color:#fffa00">Photos</a></li>
     </ul>
 
     <div style="position: fixed; right: 20px" dir="rtl">
@@ -24,7 +24,7 @@
             <input type="checkbox" name="cookieuser" value="1" checked="checked" id="cb_cookieuser_navbar" accesskey="c" tabindex="103"> זכור אותי!
         </form>
         <a class="bluelogin" href="">שחזור סיסמה</a>
-        <a class="bluelogin" href="הרשמה.aspx">הרשמה</a>
+        <a class="bluelogin" href="Register.aspx">הרשמה</a>
     </div>
 
     <form id="829737536">
@@ -118,7 +118,7 @@
     border-right-width: 0px;
     border-bottom-width: 0px;
 ">
-                        <a href="הרשמה.html">הרשמה</a>
+                        <a href="Register.html">הרשמה</a>
                     </td>
                 </tr>
             </tbody>
