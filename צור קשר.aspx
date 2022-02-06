@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="צור קשר.aspx.cs" Inherits="צור_קשר" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="Contact" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -7,10 +7,10 @@
 </head> 
 <body dir="ltr" background="cover">
     <ul style="margin-top: 33px;">
-        <li><a href="בית.aspx" style="color:#fffa00">Home</a></li>
-        <li><a href="הרשמה.aspx" style="color:#fffa00">Register</a></li>
-        <li><a href="צור קשר.aspx" style="color:#fffa00">Contact</a></li>
-        <li><a href="תמונות.aspx" style="color:#fffa00">Photos</a></li>
+        <li><a href="Home.aspx" style="color:#fffa00">Home</a></li>
+        <li><a href="Register.aspx" style="color:#fffa00">Register</a></li>
+        <li><a href="Contact.aspx" style="color:#fffa00">Contact</a></li>
+        <li><a href="Photos.aspx" style="color:#fffa00">Photos</a></li>
     </ul>
 
     <div style="position: fixed; right: 20px;top: 32px;" dir="rtl">
@@ -23,7 +23,7 @@
             <input type="checkbox" name="cookieuser" value="1" checked="checked" id="cb_cookieuser_navbar" accesskey="c" tabindex="103"> זכור אותי!
         </form>
         <a class="bluelogin" href="">שחזור סיסמה</a>
-        <a class="bluelogin" href="הרשמה.aspx">הרשמה</a>
+        <a class="bluelogin" href="Register.aspx">הרשמה</a>
     </div>
 
     <from>
