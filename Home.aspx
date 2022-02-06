@@ -24,7 +24,7 @@
             <input type="checkbox" id="checkbox" name="checkbox" value="1" checked="checked"/> זכור אותי!
         </form>
         <a class="bluelogin" href="">שחזור סיסמה</a>
-        <a class="bluelogin" href="הרשמה.aspx">הרשמה</a>
+        <a class="bluelogin" href="Register.aspx">הרשמה</a>
     </div>
 
 
