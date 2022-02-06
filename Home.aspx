@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="בית.aspx.cs" Inherits="בית" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" style="
@@ -70,10 +70,10 @@
 
 
     <ul>
-        <li><a href="בית.aspx" style="color:#fffa00">Home</a></li>
-        <li><a href="הרשמה.aspx" style="color:#fffa00">Register</a></li>
-        <li><a href="צור קשר.aspx" style="color:#fffa00">Contact</a></li>
-        <li><a href="תמונות.aspx" style="color:#fffa00">Photos</a></li>
+        <li><a href="Home.aspx" style="color:#fffa00">Home</a></li>
+        <li><a href="Register.aspx" style="color:#fffa00">Register</a></li>
+        <li><a href="Contact.aspx" style="color:#fffa00">Contact</a></li>
+        <li><a href="Photos.aspx" style="color:#fffa00">Photos</a></li>
     </ul>
 
 
