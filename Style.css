@@ -1,0 +1,26 @@
+﻿body
+{
+    background: url(51cafb9416d17.jpg) no-repeat fixed 50% 0%;
+    background-size: cover;
+}
+
+ul 
+{
+    list-style-type: none;
+    font-size:200%;
+}
+
+li 
+{
+    width:100px;
+    height:200px;
+    padding:30px;
+    display: inline;
+    float: left;
+    color: #f00;
+}
+
+h1
+{
+    color:white;
+}

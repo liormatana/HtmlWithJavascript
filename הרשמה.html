@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>The Page Of Matana</title>
+    <link type="text/css" rel="stylesheet" href="Style.css">
+</head>
+<body dir="ltr" background="cover">
+    <ul>
+        <li><a href="בית.html" style="color:#fffa00">Home</a></li>
+        <li><a href="הרשמה.html" style="color:#fffa00">Register</a></li>
+        <li><a href="צור קשר.html" style="color:#fffa00">Contact</a></li>
+        <li><a href="תמונות.html" style="color:#fffa00">Photos</a></li>
+    </ul>
+    <div class="arrow_right" style="position: fixed; right: 20px">
+        <div class="toplogin graygr dologin" dir="rtl">
+            <form id="navbar_loginform" action="login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)" dir="rtl">
+                <input type="text" class="log_in4" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="שם משתמש" style="color: black;">
+                <input type="text" class="log_in4" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="סיסמה" style="display: inline;">
+                <input type="password" class="log_in4" tabindex="102" name="vb_login_password" id="navbar_password" size="10" style="display: none; background-color: rgb(250, 255, 189); background-position: initial initial; background-repeat: initial initial;" ismxfilled="1">
+                <span class="log_in2">
+                    <button type="submit" class="bluelogin" value="התחבר" tabindex="104" title="הכנס שם משתמש וסיסמא כדי להתחבר, או לחץ על כפתור ההרשמה כדי להירשם לקהילה." accesskey="s">
+                        התחבר
+                    </button>
+                </span>
+                <span class="log_in2">
+                    <label for="cb_cookieuser_navbar">
+                        <input type="checkbox" name="cookieuser" value="1" checked="checked" id="cb_cookieuser_navbar" accesskey="c" tabindex="103"> זכור אותי!
+                    </label>
+                </span>
+                <input type="hidden" name="s" value="">
+                <input type="hidden" name="securitytoken" value="guest">
+                <input type="hidden" name="do" value="login">
+                <input type="hidden" name="vb_login_md5password" value="d41d8cd98f00b204e9800998ecf8427e">
+                <input type="hidden" name="vb_login_md5password_utf" value="d41d8cd98f00b204e9800998ecf8427e">
+            </form>
+            <script type="text/javascript">
+                YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+                YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+                YAHOO.util.Dom.setStyle('navbar_username', "color", "black");
+                vB_XHTML_Ready.subscribe(function () {
+                    //
+                    YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+                    YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+                    YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+                    YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+                });
+                function navbar_username_focus(e) {
+                    //
+                    var textbox = YAHOO.util.Event.getTarget(e);
+                    if (textbox.value == 'שם משתמש') {
+                        //
+                        textbox.value = '';
+                        textbox.style.color = 'black';
+                    }
+                }
+                function navbar_username_blur(e) {
+                    //
+                    var textbox = YAHOO.util.Event.getTarget(e);
+                    if (textbox.value == '') {
+                        //
+                        textbox.value = 'שם משתמש';
+                        textbox.style.color = 'black';
+                    }
+                }
+                function navbar_password_hint(e) {
+                    //
+                    var textbox = YAHOO.util.Event.getTarget(e);
+                    YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+                    YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+                    YAHOO.util.Dom.get('navbar_password').focus();
+                }
+                function navbar_password(e) {
+                    //
+                    var textbox = YAHOO.util.Event.getTarget(e);
+                    if (textbox.value == '') {
+                        YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+                        YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+                    }
+                }
+            </script>
+            <span class="log_in2">
+                <a class="bluelogin" href="login.php?do=lostpw">שחזור סיסמה</a>
+            </span>
+            <span class="log_in1">
+                <a class="bluelogin" href="הרשמה.html">הרשמה</a>
+            </span>
+        </div>
+    </div>
+    <from>
+        <br><br><br><br><br><br><br><br><br><br><br><br><h1 align="center" style="font-size:300%;margin-top: 0px;width: 1130px;">הרשמה</h1><table border="1" cellpadding="10" cellspacing="20" align="center" valign="center" dir="rtl" style="
+    height: 200.333;
+    border-left-width: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+">
+
+
+
+
+
+
+
+
+
+            <tbody>
+                <tr>
+                    <th style="
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+">שם משתמש:</th>
+                    <td style="
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+">
+                        <input type="text" size="25" maxlength="15">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+">שם פרטי:</th>
+                    <td style="
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+">
+                        <input type="text" size="25" maxlength="15">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+">שם משפחה:</th>
+                    <td style="
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+">
+                        <input type="text" size="25" maxlength="15" ismxfilled="1" style="background-color: rgb(250, 255, 189); background-position: initial initial; background-repeat: initial initial;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+">סיסמא:</th>
+                    <td style="
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+">
+                        <input type="password" size="25" maxlength="10" style="background-color: rgb(250, 255, 189); background-position: initial initial; background-repeat: initial initial;" ismxfilled="1">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+">כתובת מגורים:</th>
+                    <td style="
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+">
+                        <input type="text" size="25" maxlength="25">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+">מיקוד:</th>
+                    <td style="
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+">
+                        <input type="text" size="25" maxlength="8">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="
+    padding-left: 0px;
+    border-left-width: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+">אימייל:</th>
+                    <td style="
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+">
+                        <input type="email" size="25" maxlength="25">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+">מס' פלאפון:</th>
+                    <td style="
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+">
+                        <input type="text" size="25" maxlength="15">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+">תאריך לידה:</th>
+                    <td style="
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+">
+                        <select>
+                            <option value="1">1970</option>
+                            <option value="2">1971</option>
+                            <option value="3">1972</option>
+                            <option value="4">1973</option>
+                            <option value="5">1974</option>
+                            <option value="6">1975</option>
+                            <option value="7">1976</option>
+                            <option value="8">1977</option>
+                            <option value="9">1978</option>
+                            <option value="10">1979</option>
+                            <option value="11">1980</option>
+                            <option value="12">1981</option>
+                            <option value="13">1982</option>
+                            <option value="14">1983</option>
+                            <option value="15">1984</option>
+                            <option value="16">1985</option>
+                            <option value="17">1986</option>
+                            <option value="18">1987</option>
+                            <option value="19">1988</option>
+                            <option value="20">1989</option>
+                            <option value="21">1990</option>
+                            <option value="22">1991</option>
+                            <option value="23">1992</option>
+                            <option value="24">1993</option>
+                            <option value="25">1994</option>
+                            <option value="26">1995</option>
+                            <option value="27">1996</option>
+                            <option value="28">1997</option>
+                            <option value="29">1998</option>
+                            <option value="30">1999</option>
+                            <option value="31">2000</option>
+
+                        </select>
+
+                        <select>
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+
+                        <select name="select1">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 130px;
+">ספר על עצמך:</th>
+                    <td style="
+    padding-left: 0px;
+    border-top-width: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+">
+                        <textarea rows="10" cols="20" name="textarea1"></textarea>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td style="
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+">
+                        <button type="button" onclick="alert('נשלח !')">שלח</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </from>
+
+
+
+
+
+
+</body>
+</html>
